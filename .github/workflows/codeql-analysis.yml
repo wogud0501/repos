@@ -23,8 +23,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: Window
-
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
