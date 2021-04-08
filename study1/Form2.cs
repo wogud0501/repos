@@ -16,5 +16,36 @@ namespace study1
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            SlidingForm();
+        }
+        public void SlidingForm()
+        {
+            Location = Form1.FormPoint01;
+            Timer.Start();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (Form1.flag01 == false)
+            {
+                Location = new Point(Location.X + 10, Location.Y);
+                if (Location.X == Form1.FormPoint01.X - 300)
+                {
+                    Timer.Stop();
+                    Form1.flag01 = false;
+                }
+            }
+            else
+            {
+                Location = new Point(Location.X - 10, Location.Y);
+                if (Location.X == Form1.FormPoint01.X -300)
+                {
+                    Timer.Stop();
+                    Form1.flag01 = false;
+                }
+            }
+        }
     }
 }

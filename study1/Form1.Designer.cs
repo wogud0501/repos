@@ -78,7 +78,7 @@ namespace study1
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "폼 슬라이딩 붙이기";
+            this.Text = " ";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pbImg)).EndInit();
             this.ResumeLayout(false);
